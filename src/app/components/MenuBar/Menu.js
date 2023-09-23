@@ -7,6 +7,7 @@ export default function Menu() {
       {/* Aqui você irá colocar o seu código HTML para usar em qualquer página */}
       <div className="menu">
         <h3>Meu menu</h3>
+        
       </div>
     </>
   );
