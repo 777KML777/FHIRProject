@@ -1,4 +1,4 @@
-import "../ComponenteTeste/componenteTeste.css"; /* Não esquecer de importar o CSS do seu componente */
+import "../Exemplo/componenteTeste.css"; /* Não esquecer de importar o CSS do seu componente */
 
 // Trocar para o nome do seu componente
 export default function Formulario() {
