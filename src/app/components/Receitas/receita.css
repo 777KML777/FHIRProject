@@ -1,0 +1,54 @@
+table {
+    width: 50%;
+    text-align: center;
+}
+
+caption {
+    font-size: 32px;
+    text-align: left;
+}
+
+tr {
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+    opacity: 95%;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+.chevron_icon {
+    height: 18px;
+}
+
+.download_icon {
+    height: 14px;
+}
+
+.folder_icon {
+    height: 14px;
+    margin: 0px 5px;
+}
+
+.last_column {
+    display: flex; 
+    justify-content: space-around;
+}
+
+/* Descartável esse aqui. Usei apenas para centralizar o componente */
+.container-table {
+    align-items: center;
+    /* background-color: blue; */
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
