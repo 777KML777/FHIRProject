@@ -1,11 +1,13 @@
 import Receita from "../components/Receitas/Receita";
-import '../database/mock'
 
 export default function Teste() {
+
+  const propsParam = {receitas : Receitas}
+  
   return (
     <>
       <Receita
-        props={Receitas}
+        props={propsParam}
       />
     </>
   )

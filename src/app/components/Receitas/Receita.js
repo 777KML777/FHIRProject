@@ -2,7 +2,7 @@ import './receita.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faDownload, faFolder } from '@fortawesome/free-solid-svg-icons'
 
-export default function Receita(props) {
+export default function Receita({props}) {
     return (
         <>
             <div className='container-table'>
@@ -21,7 +21,7 @@ export default function Receita(props) {
 
                     {/* Acredito que isso aqui poderia ser facilmente outro componente */}
                     <tbody>
-                        {props.props.map((receita) => (
+                        {props.receitas.map((receita) => (
                             <tr key={receita.id}>
 
                                 <td
