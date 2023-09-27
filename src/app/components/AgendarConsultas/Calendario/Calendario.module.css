@@ -1,4 +1,6 @@
 .container {
+    margin: 0 auto;
+    height: fit-content;
     display: flex;
     padding: 0.625rem;
     flex-direction: column;
@@ -82,18 +84,20 @@
 }
 
 .dia_mes_atual {
-    color: var(--texto-cor-secundaria);
+    color: var(--texto-cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 0.9375rem;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    display: flex;
-    width: 1.875rem;
-    height: 1.875rem;
     padding: 0.625rem;
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--texto-cor-secundaria);
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
     border-radius: 6.25rem;
     background: var(--cor-principal);
 }

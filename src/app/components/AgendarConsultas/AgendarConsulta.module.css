@@ -18,12 +18,11 @@
 .side {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 1.25rem;
 }
 
 .filtro_btn {
-    display: none;
     width: fit-content;
     padding: 0.625rem;
     justify-content: center;
@@ -33,15 +32,34 @@
     background: #FAFAFA;
     box-shadow: var(--box-shadow);
     color: #000;
-
+    
     font-family: var(--main-font);
     font-weight: 600;
     line-height: normal;
+
+    display: none;
+}
+
+.filtro_adicionado{
+    width: fit-content;
+    display: none;
+    padding: 0.2rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    border-radius: 6.25rem;
+    background: #5B89FF;
+    color: #fff;
 }
 
 .icone{
     color: var(--texto-cor-principal);
     width: 1rem;
+}
+
+.iconeX{
+    color: var(--texto-cor-secundaria);
+    width: 0.5rem;
 }
 
 .main {
@@ -79,12 +97,11 @@
 @media (max-width: 768px) {
     .container {
         max-width: 640px;
+        flex-direction: column;
     }
     .side{
-        display: none;
-    }
-    .filtro-btn{
-        display: block;
+        flex-direction: row;
+        width: 100%;
     }
 }
 
@@ -92,6 +109,9 @@
 @media (max-width: 640px) {
     .container {
         max-width: 475px;
+    }
+    .side{
+        flex-direction: column;
     }
 }
 

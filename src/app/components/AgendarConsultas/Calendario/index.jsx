@@ -63,7 +63,7 @@ function Calendario() {
                     <div className={styles.dias_semana}>
                         <p className={styles.dia_semana}>DOM</p>
                         <p className={styles.dia_mes}>7</p>
-                        <p className={styles.dia_mes}>14</p>
+                        <p className={styles.dia_mes_atual}>14</p>
                         <p className={styles.dia_mes}>21</p>
                         <p className={styles.dia_mes}>28</p>
                         <p className={styles.dia_mes_outro}>4</p>
