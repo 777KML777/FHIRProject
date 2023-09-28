@@ -1,39 +1,38 @@
 const express = require('express');
 const cors = require('cors');
-const {
-  getAuthToken,
-  postPatient,
-  printPatientInfo,
-  getPatients,
-} = require('./samples');
+
+const { getAuthToken } = require('./auth');
+
+// Import Controllers 
+const { getPatients, postPatient, getPatientById, } = require('./controllers/patientController');
 
 const app = express();
-const port = 3000 || process.env.PORT; // Porta em que o servidor irá escutar
+const port = 3000 || process.env.PORT;
 
-// Habilitar o middleware CORS para permitir solicitações de qualquer origem
 app.use(cors());
 
-// Rota de exemplo
 app.get('/patients', async (req, res) => {
   const accessToken = await getAuthToken();
   const data = await getPatients(accessToken);
-
   res.json(data?.entry || []);
 });
 
 app.get('/patients/:id', async (req, res) => {
   const patientId = req.params.id;
   const accessToken = await getAuthToken();
-  const data = await printPatientInfo(patientId, accessToken);
+  const data = await getPatientById(patientId, accessToken);
 
   res.json(data);
 });
 
-app.post('/patients', async (req, res) => {
-  const accessToken = await getAuthToken();
-  const patientId = await postPatient(accessToken, req.body);
+app.get('/patients', async (req, res) => {
+  // const accessToken = await getAuthToken();
+  // const patientId = await postPatient(accessToken, req.body);
 
-  res.json({ patientId });
+  console.log(patientOperation)
+
+  // res.json({ patientId });
+  res.json({ patientOperation });
 });
 
 // Iniciar o servidor
