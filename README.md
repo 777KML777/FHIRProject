@@ -17,3 +17,16 @@ node api.js
 É recomendado rodar o backend primeiro para ele rodar na porta 3000 e depois rodar o front para ele abrir na porta 3001. 
 
 No front para acesar as páginas basta digitar na url do navegador `http://localhost:3001/nomePasta ` (nomePasta) é o nome da pasta onde estará o seu arquivo page. De exemplos temos `http://localhost:3001/consultas` e `http://localhost:3001/receitas` (esse /receitas para funcionar tem que estar com a api rodando. 
+
+
+# Antes de rodar o projeto 
+
+Antes de rodar o projeto da API ou do FRONT talvez seja necessária no diretória raiz, rodar o comando 
+```bash
+npm i
+
+#or
+
+npm install 
+```
+Para ele instalar as dependências dos pacotes que estão no arquivo package.json
