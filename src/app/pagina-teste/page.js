@@ -1,7 +1,5 @@
 import Formulario from "../components/Formulario/Formulario";
-import Menu from "../components/MenuBar/Menu";
-import Footer from "../components/Footer/Footer";
-import Calendario from "../components/Calendario/Calendario";
+import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
 
 export default function Teste() {
     return (
@@ -9,9 +7,7 @@ export default function Teste() {
         {/* Aqui você irá importar os seus componentes criados */}
         {/* <ComponenteTeste/> */}
         <Formulario/>
-        <Menu/> 
-        <Footer/> 
-        <Calendario/>
+        <DadosBeneficiario/>
       </>
     )
   }
