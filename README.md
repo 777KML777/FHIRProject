@@ -2,35 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Para rodar o front do projeto execute o comando no diretório raiz do projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para rodar o backend do projeto execute o comando no diretório src/api
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+node api.js
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+É recomendado rodar o backend primeiro para ele rodar na porta 3000 e depois rodar o front para ele abrir na porta 3001. 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+No front para acesar as páginas basta digitar na url do navegador `http://localhost:3001/nomePasta ` (nomePasta) é o nome da pasta onde estará o seu arquivo page. De exemplos temos `http://localhost:3001/consultas` e `http://localhost:3001/receitas` (esse /receitas para funcionar tem que estar com a api rodando. 
