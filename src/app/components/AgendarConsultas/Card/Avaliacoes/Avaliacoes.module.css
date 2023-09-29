@@ -1,0 +1,19 @@
+.container {
+    position: absolute;
+    right: 1rem;
+}
+
+.icone {
+    width: 0.5rem;
+    color: var(--cor-principal);
+}
+
+.avaliacoes {
+    color: var(--texto-cor-opaca);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
