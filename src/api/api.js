@@ -1,3 +1,6 @@
+// Remover isso aqui depois 
+const Receitas = require('./entities/receitas')
+
 const express = require('express');
 const cors = require('cors');
 
@@ -34,6 +37,12 @@ app.get('/patients', async (req, res) => {
   // res.json({ patientId });
   res.json({ patientOperation });
 });
+
+// Integrando com o front... 
+app.get('/receitas', async (req, res) => {
+  console.log(Receitas)
+  res.json(Receitas)
+})
 
 // Iniciar o servidor
 app.listen(port, () => {
