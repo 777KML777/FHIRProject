@@ -21,7 +21,7 @@ export default function() {
   const pegarReceitas = async () => {
     const response = await api.get("/receitas");
     setReceitas(response)
-
+ 
   };
 
   
