@@ -1,31 +1,31 @@
 const practitionerData = {
-    resourceType: 'Practitioner',
+    resourceType: '',
     active: true,
     name: [
       {
-        family: 'Smith',
-        given: ['John'],
+        family: '',
+        given: [''],
       },
     ],
-    gender: 'male',
-    birthDate: '1975-05-15',
+    gender: '',
+    birthDate: '',
     address: [
       {
-        use: 'home',
-        line: ['123 Main Street'],
-        city: 'Anytown',
-        state: 'CA',
-        postalCode: '12345',
+        use: '',
+        line: [''],
+        city: '',
+        state: '',
+        postalCode: '',
       },
     ],
     telecom: [
       {
-        system: 'phone',
-        value: '555-555-5555',
+        system: '',
+        value: '',
       },
       {
-        system: 'email',
-        value: 'john.smith@example.com',
+        system: '',
+        value: '',
       },
     ],
     qualification: [
@@ -33,14 +33,14 @@ const practitionerData = {
         code: {
           coding: [
             {
-              system: 'http://www.nlm.nih.gov/research/umls/rxnorm',
-              code: 'Physician',
+              system: '',
+              code: '',
             },
           ],
-          text: 'Physician',
+          text: '',
         },
         period: {
-          start: '2000-01-01',
+          start: '',
         },
       },
     ],

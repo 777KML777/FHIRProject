@@ -45,9 +45,7 @@ const practitionerMapFhirToApi = (fhirObject) => {
 }
 
 const practitionerMapApiToFhir = () => {
-  // Transpassar tudo isso para uma lista
   const { id, name, address, qualification } = fhirObject[0]?.resource;
-  // const {name} = fhirObject[0]?.resource;
 
   apiReturn.id = id;
   apiReturn.nome = name[0].given[0];
