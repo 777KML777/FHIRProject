@@ -18,6 +18,8 @@ const {
 } = require("./controllers/patientController");
 
 const {
+  practitionerMapFhirToApi,
+  practitionerMapApiToFhir,
   getPractitioners,
   postPractitioner,
 } = require("./controllers/practitionerController");
@@ -66,18 +68,23 @@ app.post("/patient", async (req, res) => {
 //#endregion
 
 //#region REQUEST PRACTITIONER
+
+// GET ALL -> REQUEST PATIENTS
 app.get("/practitioner", async (req, res) => {
-  console.log("cheguei na integração FHIR");
+  console.log('API - Get All Practitioner')
   const accessToken = await getAuthToken();
   const data = await getPractitioners(accessToken);
-  res.json(data?.entry || []);
-  // console.log('cheguei na integração FHIR')
+  
+  console.log(data?.entry)
+  console.log('API - Get All Practitioner - Exit')
+  const lstDoutores = practitionerMapFhirToApi(data?.entry); //data?.entry é o practitioner do FHIR
+  
+  res.json(lstDoutores || []);
 });
 
+// POST -> REQUEST PRACTITIONER
 app.post("/practitioner", async (req, res) => {
   console.log('entrei no post')
-
-  
   const accessToken = await getAuthToken();
 
   console.log(req.body);
