@@ -1,0 +1,29 @@
+[
+    {
+        "nome": "Peso",
+        "icone": "weight-scale",
+        "prefix": "Kg",
+        "resultados": "--"
+    },
+    {
+        "nome": "Sono",
+        "icone": "bed",
+        "prefix": "Hrs",
+        "resultados": "--"
+    },
+    {
+        "nome": "Humor",
+        "icone": "face-meh",
+        "resultados": "--"
+    },
+    {
+        "nome": "Social",
+        "icone": "comments",
+        "resultados": "--"
+    },
+    {
+        "nome": "Mental",
+        "icone": "brain",
+        "resultados": "--"
+    }
+]

@@ -24,7 +24,6 @@ function FiltroItem({ filtros }) {
                                 : ""}
                         </div>
                     </div>
-
                 )
             })}
         </>
