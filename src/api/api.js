@@ -57,13 +57,15 @@ app.get("/patient/:id", async (req, res) => {
 });
 
 app.post("/patient", async (req, res) => {
+  console.log('Chegei na api')
   // const accessToken = await getAuthToken();
   // const patientId = await postPatient(accessToken, req.body);
 
-  console.log(patientOperation);
+  // console.log(patientOperation);
 
-  // res.json({ patientId });
-  res.json({ patientOperation });
+  // // res.json({ patientId });
+  // res.json({ patientOperation });
+  
 });
 //#endregion
 
