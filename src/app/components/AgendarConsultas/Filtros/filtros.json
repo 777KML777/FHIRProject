@@ -1,0 +1,33 @@
+[
+    {
+        "tipo": "checkbox",
+        "categoria": "Gênero",
+        "opcoes": [
+            "Masculino",
+            "Feminino"
+        ]
+    },
+    {
+        "tipo": "checkbox",
+        "categoria": "Especialidades",
+        "opcoes": [
+            "Psicologia",
+            "Psiquiatria",
+            "Nutrição"
+        ]
+    },
+    {
+        "tipo": "texto",
+        "categoria": "Endereço",
+        "placeholder": "Insira o endereço desejado"
+    },
+    {
+        "tipo": "checkbox",
+        "categoria": "Reunião",
+        "opcoes": [
+            "Online",
+            "Presencial",
+            "Híbrido"
+        ]
+    }
+]
