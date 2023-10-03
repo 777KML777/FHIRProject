@@ -1,25 +1,33 @@
 import styles from './tarefas.module.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTableList, faTableCells, faCircle, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
+import Pesquisa from './pesquisa'
+import Ordenar from './ordenar'
+import Filtrar from './filtrar'
+import ItemTarefa from './itemTarefa'
 
 function Tarefas() {
     return (
         <>
-            <div className="container">
-                <div className="cabecario">
-                    <div className="exibicoes">
-                        <div className="lista"></div>
-                        <div className="calendario"></div>
+            <div className={styles.container}>
+                <div className={styles.cabecario}>
+                    <div className={styles.exibicoes}>
+                        <div>
+                            <FontAwesomeIcon icon={faTableList} className={styles.icone} />
+                        </div>
+                        <div>
+                            <FontAwesomeIcon icon={faTableCells} className={styles.icone} />
+                        </div>
                     </div>
-                    <div className="filtros"></div>
-                    <div className="nova_tarefa"></div>
+                    <div className={styles.filtros}>
+                        <Pesquisa />
+                        <Ordenar />
+                        <Filtrar />
+                    </div>
+                    <div className={styles.nova_tarefa}>+ Nova Tarefa</div>
                 </div>
-                <div className="corpo">
-                    <div className="item">
-                        <div className="data"></div>
-                        <div className="horario"></div>
-                        <div className="nome"></div>
-                        <div className="opcoes"></div>
-                    </div>
+                <div className={styles.corpo}>
+                    <ItemTarefa />
                 </div>
             </div>
         </>

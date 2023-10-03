@@ -1,0 +1,22 @@
+.container {
+    width: fit-content;
+    display: flex;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    border: 1px solid #212121;
+    background-color: #fff;
+}
+
+.icone {
+    width: 1rem;
+    color: #000;
+}
+
+.container select{
+    background: none;
+    border: none;
+    color: #000;
+}

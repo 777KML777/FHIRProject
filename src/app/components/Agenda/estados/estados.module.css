@@ -1,7 +1,7 @@
 .container {
-    width: fit-content;
+    width: 100%;
     display: flex;
-    gap: 1rem;
+    justify-content: space-around;
     padding: 0.625rem 1.25rem;
     border-radius: 0.625rem;
     border: 2px solid var(--cor-principal);

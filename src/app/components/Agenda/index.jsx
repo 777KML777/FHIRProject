@@ -8,7 +8,18 @@ import Tarefas from './tarefas'
 function Agenda() {
     return (
         <>
-            <Tarefas />
+            <div className={styles.container}>
+                <div className={styles.side}>
+                    <Calendario />
+                    <Categorias />
+                    <Consultas />
+                </div>
+                <div className={styles.main}>
+                    <Estados />
+                    <Tarefas />
+                </div>
+            </div>
+
         </>
     )
 }

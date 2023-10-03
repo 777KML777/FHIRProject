@@ -65,3 +65,52 @@
     align-self: stretch;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.item {
+    font-family: var(--fonte-principal);
+    color: var(--texto-cor-principal);
+    display: flex;
+    padding: 1.25rem;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: stretch;
+    border-top: 0.5px solid #BEBEBE;
+    background: #FFF;
+    gap: 2rem;
+}
+
+.data {
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.data span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.horario {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.categoria {
+    color: var(--cor-principal);
+    width: 0.9375rem;
+}
+
+.nome {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.opcoes {
+    width: 0.32406rem;
+    margin-left: auto;
+}

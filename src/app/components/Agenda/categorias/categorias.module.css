@@ -1,5 +1,4 @@
 .container {
-    width: fit-content;
     display: flex;
     padding: 1.25rem;
     flex-direction: column;
@@ -29,7 +28,6 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.9375rem;
-    border: 1px solid red;
 }
 
 .categoria_item label {
