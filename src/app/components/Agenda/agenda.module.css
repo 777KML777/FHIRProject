@@ -6,7 +6,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 2.3125rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .side {
