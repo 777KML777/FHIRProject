@@ -1,0 +1,8 @@
+.main_home {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: var(--texto-cor-principal);
+    align-items: center;
+    justify-content: center;
+}
