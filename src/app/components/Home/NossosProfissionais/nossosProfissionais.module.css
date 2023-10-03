@@ -8,28 +8,87 @@
 .profissionais_icones {
     display: flex;
     flex-direction: column;
+    width: 39.625rem;
     justify-content: center;
     align-items: center;
     gap: 1.875rem;
 }
 
-.styles.texto_introdutorio {
+.texto_introdutorio {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: #000;
 }
 
+.texto_introdutorio h1 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: -0.045rem;
+}
+
+.texto_introdutorio p {
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.023rem;
+}
+
 .doutores_foto {
     display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Flex-Wrap: Wrap;
+    width: 100%; */
     justify-content: center;
     align-items: center;
     gap: 3.125rem;
 }
 
+.icone_doc {
+    display: flex;
+    padding: 0.625rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 10px;
+    border: 2px solid #18A0FB;
+    height: 10.625rem;
+    width: 10.625rem;
+}
+
+.icone_doc img {
+    width: 100%;
+    height: 100%;
+}
+
 .profissional_selecionado {
-    width: 480px;
-    height: 600px;
-    color: #000;
+    width: 30rem;
+    height: 37.5rem;
+    color: var(--texto-cor-principal);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+.img_profissional {
+    background-image: url(./images/Foto.png);
+    width: 30rem;
+    height: 20.625rem;
+}
+
+.sobre_profissional {
+    padding: 2.125rem 0.813rem;
+}
+
+.profissional_selecionado h1 {
+    color: var(--texto-cor-principal);
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
+.profissional_selecionado p {
+    color: var(--texto-cor-principal);
+    line-height: 1.875rem;
+    letter-spacing: -0.015rem;
 }
