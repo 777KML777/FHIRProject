@@ -1,0 +1,35 @@
+.profissionais {
+    display: flex;
+    padding:  7.5rem 7.438rem 7.688rem 6.875rem;
+    align-items: flex-start;
+    gap: 7.563rem;
+}
+
+.profissionais_icones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.styles.texto_introdutorio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #000;
+}
+
+.doutores_foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.profissional_selecionado {
+    width: 480px;
+    height: 600px;
+    color: #000;
+}
