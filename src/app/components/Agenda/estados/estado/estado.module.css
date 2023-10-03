@@ -1,0 +1,54 @@
+.container {
+    padding: 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    color: var(--texto-cor-principal);
+}
+
+.nome {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container_estado {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    border: 3px solid var(--cor-secundaria);
+}
+
+.icone {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    flex-shrink: 0;
+    color: var(--cor-secundaria);
+}
+
+.resultado {
+    color: var(--texto-cor-principal);
+    font-family: var(--fonte-principal);;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.resultado span {
+    color: var(--texto-cor-principal);
+    font-family: var(--fonte-principal);;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

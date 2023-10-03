@@ -1,0 +1,26 @@
+.container {
+    width: fit-content;
+    display: flex;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    border: 1px solid #212121;
+    background: #fff;
+}
+
+.icone {
+    width: 1rem;
+    color: var(--texto-cor-principal);
+}
+
+.container p {
+    color: var(--texto-cor-principal);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

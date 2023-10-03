@@ -1,0 +1,18 @@
+[
+    {
+        "categoria": "Pessoal",
+        "cor": "#18A0FB"
+    },
+    {
+        "categoria": "Faculdade",
+        "cor": "#FFB144"
+    },
+    {
+        "categoria": "Trabalho",
+        "cor": "#FF4949"
+    },
+    {
+        "categoria": "Lazer",
+        "cor": "#48D43C"
+    }
+]

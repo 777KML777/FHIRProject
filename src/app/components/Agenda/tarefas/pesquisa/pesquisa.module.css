@@ -1,0 +1,27 @@
+.container {
+    width: fit-content;
+    background-color: #fff;
+    display: flex;
+    padding: 0.625rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    border: 1px solid #212121;
+}
+
+.icone {
+    width: 1rem;
+    color: #212121;
+}
+
+.container input {
+    color: var(--texto-cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    border: none;
+}
