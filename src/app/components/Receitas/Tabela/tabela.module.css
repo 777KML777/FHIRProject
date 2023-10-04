@@ -1,27 +1,27 @@
-table {
+.tabela {
     width: 50%;
     text-align: center;
 }
 
-caption {
+.legenda {
     font-size: 32px;
     text-align: left;
 }
 
-tr {
+.tabela_linha {
     color: black;
 }
 
-tr:nth-child(odd) {
+.tabela_linha:nth-child(odd) {
     background-color: #FFF;
 }
 
-tr:nth-child(even) {
+.tabela_linha:nth-child(even) {
     background-color: #fafafa;
     opacity: 95%;
 }
 
-td:nth-child(1) {
+.tabela_data:nth-child(1) {
     text-align: left;
 }
 
@@ -44,7 +44,7 @@ td:nth-child(1) {
 }
 
 /* Descartável esse aqui. Usei apenas para centralizar o componente */
-.container-table {
+.container_table {
     align-items: center;
     /* background-color: blue; */
     display: flex;

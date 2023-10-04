@@ -1,4 +1,4 @@
-import "./receita.css";
+import styles from "./tabela.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -9,15 +9,15 @@ import {
 export default function Receita(props) {
   return (
     <>
-      <div className="container-table">
-        <table>
-          <caption>
+      <div className={styles.container_table}>
+        <table className={styles.tabela}>
+          <caption className={styles.legenda}>
             Documentos
-            <FontAwesomeIcon className="chevron_icon" icon={faChevronRight} />
+            <FontAwesomeIcon className={styles.chevron_icon} icon={faChevronRight} />
             Receitas
           </caption>
           <thead>
-            <tr>
+            <tr className={styles.tabela_linha}>
               <th>Arquivo</th>
               <th>Código</th>
               <th>Doutor (a)</th>
@@ -31,19 +31,19 @@ export default function Receita(props) {
           <tbody>
             {props.props?.map((receita) => (
               <tr key={receita.id}>
-                <td>
-                  <FontAwesomeIcon className="folder_icon" icon={faFolder} />
+                <td className={styles.tabela_data}>
+                  <FontAwesomeIcon className={styles.folder_icon} icon={faFolder} />
                   {receita.arquivo}
                 </td>
-                <td>{receita.codigo}</td>
-                <td>{receita.doutor}</td>
-                <td>{receita.area}</td>
-                <td>{receita.dataDeEmissao}</td>
-                <td>
-                  <div className="last_column">
+                <td className={styles.tabela_data}>{receita.codigo}</td>
+                <td className={styles.tabela_data}>{receita.doutor}</td>
+                <td className={styles.tabela_data}>{receita.area}</td>
+                <td className={styles.tabela_data}>{receita.dataDeEmissao}</td>
+                <td className={styles.tabela_data}>
+                  <div className={styles.last_column}>
                     {receita.dataDeValidade}
                     <FontAwesomeIcon
-                      className="download_icon"
+                      className={styles.download_icon}
                       icon={faDownload}
                     />
                   </div>

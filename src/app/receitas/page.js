@@ -4,7 +4,7 @@
 
 "use client";
 import { useEffect, useState } from "react";
-import Receita from "../components/Receitas/Receita";
+import Receita from "../components/Receitas";
 import api from "../api/requests";
 
 import ButtonComponent from "../components/ButtonComponent/ButtonComponent";
