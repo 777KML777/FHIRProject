@@ -5,6 +5,7 @@ const config_auth = require('../config')
 // Não esquecer de pegar e passar o patientEntity para inserir um paciente no FHIR 
 
 async function getPatients(accessToken) {
+    console.log('API -> FHIR Get All Patientes')
     const baseUrl = config_auth.fhirEndpoint + 'Patient';
 
     try {
@@ -12,8 +13,8 @@ async function getPatients(accessToken) {
         headers: getHttpHeader(accessToken),
       });
       
-      console.log(response)
-
+      // console.log(response)
+      console.log('API -> FHIR Get All Patientes - Exit')
       return response?.data;
     } catch (error) {
       console.log('\tError getting patient data: ' + error.response.status);
@@ -22,7 +23,7 @@ async function getPatients(accessToken) {
 
 async function getPatientById(patientId, accessToken) {
     // GET htts://<fhir endpoint>/Patient/<patientId>
-  
+    console.log('API -> FHIR Get By Id Patient')
     const baseUrl = config_auth.fhirEndpoint + 'Patient/' + patientId;
   
     try {
@@ -30,7 +31,7 @@ async function getPatientById(patientId, accessToken) {
         headers: getHttpHeader(accessToken),
       });
     //   printResponseResults(response);
-  
+    console.log('API -> FHIR Get By Id Patient - Exit')
       return response?.data;
     } catch (error) {
       console.log('\tError getting patient data: ' + error.response.status);
@@ -49,9 +50,9 @@ async function getPatientById(patientId, accessToken) {
         }
       );
       const resourceId = response.data.id;
-      console.log(
-        '\tPatient ingested: ' + resourceId + '. HTTP ' + response.status
-      );
+      // console.log(
+      //   '\tPatient ingested: ' + resourceId + '. HTTP ' + response.status
+      // );
       return resourceId;
     } catch (error) {
       console.log('\tError persisting patient: ' + error.response.status);

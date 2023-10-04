@@ -6,6 +6,7 @@ import {
   faFolder,
 } from "@fortawesome/free-solid-svg-icons";
 
+
 export default function Receita(props) {
   return (
     <>
@@ -27,7 +28,6 @@ export default function Receita(props) {
             </tr>
           </thead>
 
-          {/* Acredito que isso aqui poderia ser facilmente outro componente */}
           <tbody>
             {props.props?.map((receita) => (
               <tr key={receita.id}>

@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.625rem;
+    border: 2px solid var(--cor-principal);
+    background: #FFF;
+}

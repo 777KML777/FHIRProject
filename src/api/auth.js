@@ -2,7 +2,7 @@ const axios = require('axios');
 const config_auth = require('./config')
 
 function getHttpHeader(accessToken) {
-  console.log("cheguei aqui")
+  // console.log("fasfasfasfasdfasfsda")
   
   return {
     Authorization: 'Bearer ' + accessToken,
@@ -23,12 +23,12 @@ async function getAuthToken() {
       data
     );
     const accessToken = response.data.access_token;
-    console.log(
-      '\tAAD Access Token acquired: ' + accessToken.substring(0, 50) + '...'
-    );
+    // console.log(
+    //   '\tAAD Access Token acquired: ' + accessToken.substring(0, 50) + '...'
+    // );
     return accessToken;
   } catch (error) {
-    console.log('\tError getting token: ' + error.response.status);
+    // console.log('\tError getting token: ' + error.response.status);
     return null;
   }
 }
