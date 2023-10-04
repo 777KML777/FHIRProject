@@ -1,5 +1,5 @@
-import "../Formulario/formulario.css"; /* Não esquecer de importar o CSS do seu componente */
-import '../../database/mock'
+import "./formulario.css"; /* Não esquecer de importar o CSS do seu componente */
+import '../../../database/mock'
 
 // Trocar para o nome do seu componente
 export default function Formulario() {
