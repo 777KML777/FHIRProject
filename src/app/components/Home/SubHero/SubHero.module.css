@@ -6,11 +6,13 @@
 }
 
 .sub_hero_section img {
-    width: 40%;
-    height: 40%;
+    width: 27rem;
 }
 
 .programas_auto_cuidado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #FFF;
 }
 
@@ -27,12 +29,16 @@
 }
 
 .programas_auto_cuidado button {
+    width: fit-content;
     padding: 0.625rem;
     border: none;
     border-radius: 0.5rem;
     background: #FA9D19;
-    font-size: 1.2rem;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
 }
 
 @media (max-width: 850px) {
