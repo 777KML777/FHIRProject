@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Receita from "../components/Receitas/Receita";
 import api from "../api/requests";
 import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
+import styles from "./receitas.module.css"
 
 import "../database/mock";
 
@@ -20,9 +21,11 @@ export default function () {
 
   return (
     <>
-      <DadosBeneficiario />
-      <div>
-        <Receita props={receitas?.data} />
+      <div className={styles.body}>
+        <DadosBeneficiario />
+        <div>
+          <Receita props={receitas?.data} />
+        </div>
       </div>
     </>
   );
