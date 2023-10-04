@@ -89,3 +89,10 @@
     line-height: 1.875rem;
     letter-spacing: -0.015rem;
 }
+
+@media (max-width: 1270px) {
+    .profissionais {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -12,10 +12,8 @@
     background-position: left center;
 }
 
-
 .hero_sectio span {
     color: #FFF;
-    font-family: Poppins;
     font-size: 3.5rem;
     font-style: normal;
     font-weight: 500;
@@ -43,7 +41,6 @@
     border-radius: 0.625rem;
     background:#18A0FB;
     color: #FFF;
-    font-family: Poppins;
     font-size: 1.875rem;
     font-style: normal;
     font-weight: 500;
@@ -51,4 +48,3 @@
     letter-spacing: -0.028rem;
     cursor: pointer;
 }
-

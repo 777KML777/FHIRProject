@@ -10,8 +10,6 @@ export default function HeroSection() {
         </p>
         <button>Consulte agora!</button>
       </section>
-
-      <p></p>
     </>
   );
 }
