@@ -47,4 +47,6 @@
     line-height: 5rem;
     letter-spacing: -0.028rem;
     cursor: pointer;
+    border: none;
+    box-shadow: var(--box-shadow);
 }

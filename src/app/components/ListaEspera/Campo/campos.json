@@ -1,0 +1,36 @@
+[
+    {
+        "tipo": "texto",
+        "categoria": "Nome Completo",
+        "placeholder": "Seu nome completo"
+    },
+    {
+        "tipo": "number",
+        "categoria": "Qual a sua idade?",
+        "placeholder": "00"
+    },
+    {
+        "tipo": "tel",
+        "categoria": "DDD + WhatsApp",
+        "placeholder": "00 00000-0000"
+    },
+    {
+        "tipo": "texto",
+        "categoria": "Quais seriam os principais motivos para buscar atrendimento com os profissionais da MindCare?",
+        "placeholder": "Motivos"
+    },
+    {
+        "tipo": "checkbox",
+        "categoria": "Qual(is) área(s) em específico você teria interesse de realizar seu agendamento?",
+        "opcoes": [
+            "Psicologia",
+            "Psiquiatria",
+            "Nutrição"
+        ]
+    },
+    {
+        "tipo": "texto",
+        "categoria": "Quais seus horário disponíveis para o atendimento?",
+        "placeholder": "Insira os horarios separados por espaço"
+    }
+]

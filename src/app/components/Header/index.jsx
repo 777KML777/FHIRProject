@@ -14,7 +14,7 @@ export default function Header() {
           </div>
 
           <div className={styles.navigation_header}>
-            <Link href="#" className={styles.text_item_header}>Programas de auto cuidado</Link>
+            <Link href="./programas" className={styles.text_item_header}>Programas de auto cuidado</Link>
             <Link href="./consultas" className={styles.text_item_header}>Agendar Consulta</Link>
             <Link href="./agendas" className={styles.text_item_header}>Agenda</Link>
             <Link href="./receitas" className={styles.text_item_header}>Receitas</Link>

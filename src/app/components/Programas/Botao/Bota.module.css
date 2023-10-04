@@ -1,0 +1,17 @@
+.botao {
+    width: 24%;
+    padding: 0.4375rem 3.9375rem;
+    color: var(--cor-principal);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    border-radius: 1.25rem;
+    border: 2px solid var(--cor-principal);
+    min-width: 15rem;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: var(--cor-principal);
+    color: #FFF;
+}
