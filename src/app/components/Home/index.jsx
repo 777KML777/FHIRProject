@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import NossosProfissionais from "./NossosProfissionais";
 import SubHero from "./SubHero";
 import FormularioHome from "./FormularioHome";
+import Footer from "../Footer";
 
 export default function Home() {
   return (
