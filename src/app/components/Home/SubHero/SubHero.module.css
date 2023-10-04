@@ -1,0 +1,48 @@
+.sub_hero_section {
+    display: flex;
+    gap: 10%;
+    background: #18A0FB;
+    padding: 4.5rem 15%;
+}
+
+.sub_hero_section img {
+    width: 40%;
+    height: 40%;
+}
+
+.programas_auto_cuidado {
+    color: #FFF;
+}
+
+.programas_auto_cuidado h1 {
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.programas_auto_cuidado p {
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: 0.063rem;
+}
+
+.programas_auto_cuidado button {
+    padding: 0.625rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #FA9D19;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .sub_hero_section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .sub_hero_section img {
+        width: 50%;
+        height: 50%;
+    }
+}
