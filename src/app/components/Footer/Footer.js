@@ -4,8 +4,12 @@ import "./footer.css";
 export default function Footer() {
   return (
     <>
-    
-      <h3>Meu footer</h3>
+     <div className="footer" id="footer">
+        <div className="logo_img">
+            <img src="Logo.png" className="img_logo_footer" alt="MindCare"/>
+        </div>
+        <p className="texto-footer">© MindCare. 2023.</p>
+    </div>
     </>
   );
 }
