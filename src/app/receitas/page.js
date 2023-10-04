@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Receita from "../components/Receitas/Receita";
 import api from "../api/requests";
+import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
 
 import "../database/mock";
 
@@ -10,21 +11,18 @@ export default function () {
 
   const pegarReceitas = async () => {
     const response = await api.get("/receitas");
-    setReceitas(response)
-
+    setReceitas(response);
   };
 
   useEffect(() => {
     pegarReceitas();
-
   }, []);
 
   return (
     <>
+      <DadosBeneficiario />
       <div>
         <Receita props={receitas?.data} />
-        {/* <ButtonComponent /> */}
-        <button onClick={pegarReceitas}>Clique-me</button>;
       </div>
     </>
   );

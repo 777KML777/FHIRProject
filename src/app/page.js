@@ -1,5 +1,6 @@
 'use client'
 import api from './api/requests'
+import Formulario from './components/Formulario/Formulario'
 
 export default function Home() {
   
@@ -17,11 +18,13 @@ export default function Home() {
 
   return (
     <>
-      <button 
+      {/* <button 
         onClick={enviar}
       >
         Cadastre-se
-      </button>
+      </button> */}
+
+      <Formulario/>
     </>
   )
 }

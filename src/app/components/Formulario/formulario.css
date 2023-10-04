@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+/* body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #D4DFF5;
+} */
+
+.form {
+    display: flex;
+    max-width: 38.875rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 4.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background-color: #fff;
+}
+
+.form-header {
+    margin-bottom: 2.688rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    width: 100%;
+    max-width: 30.875rem;
+    height: 2.25rem;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+} 
+
+.nome {
+    display: flex;
+}
+
+.input-box input {
+    max-width: 14.375rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 0.875rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+.input-box {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.cadastro-button {
+    display: flex;
+    align-items: center;
+}
+
+.cadastro-button button {
+    border: none;
+    border-radius: 0.625rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    line-height: 312.5%;
+    letter-spacing: -0.015rem;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #18A0FB;
+}
+
+.cadastro-button button:hover {
+    background-color: #0086df;
+}
