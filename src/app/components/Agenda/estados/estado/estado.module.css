@@ -29,9 +29,7 @@
 }
 
 .icone {
-    width: 2.8125rem;
-    height: 2.8125rem;
-    flex-shrink: 0;
+    width: 2rem;
     color: var(--cor-secundaria);
 }
 

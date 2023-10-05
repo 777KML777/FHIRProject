@@ -103,3 +103,7 @@
 .cadastro_button button:hover {
     background-color: #0086df;
 }
+
+.formulario{
+    margin-bottom: 10rem;
+}
