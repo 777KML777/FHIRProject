@@ -7,5 +7,5 @@ const request = {
 }
 
 export default axios.create({
-    baseURL : request.localDebug
+    baseURL : request.publishAPI
 })

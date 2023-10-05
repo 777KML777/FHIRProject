@@ -12,7 +12,7 @@ import Tarefas from './tarefas'
 import Modal from '../Modal'
 
 function Agenda() {
-    const [ativo, setAtivo] = useState("True")
+    const [ativo, setAtivo] = useState("False")
     
     console.log(Categorias)
     return (
