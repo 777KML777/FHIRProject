@@ -6,7 +6,7 @@ import Avaliacoes from './Avaliacoes'
 function CardAgendarConsulta(props) {
 
     console.log('Entrei no card')
-    console.log(props.props.nome)
+    console.log(props.props)
     
     return (
         <div className={styles.container}>
@@ -21,7 +21,7 @@ function CardAgendarConsulta(props) {
             </div>
             <div className={styles.descricao}>
                 <div className={styles.descricao_titulo}>DESCRIÇÃO</div>
-                <div className={styles.descricao_conteudo}>{props.props.descricao.texto}</div>
+                <div className={styles.descricao_conteudo}>{props.props.descricao.code.text}</div>
                 <div className={styles.especialidades}>
                     <div className={styles.especialidades_titulo}>ESPECIALIDADES</div>
                     <ul className={styles.especialidades_lista}>
