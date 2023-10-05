@@ -1,0 +1,75 @@
+.container {
+    width: fit-content;
+    position: relative;
+}
+
+.tumb {
+    width: 15rem;
+    height: auto;
+}
+
+.numero {
+    top: 0.5rem;
+    right: 0.5rem;
+    position: absolute;
+    color: var(--texto-cor-principal);
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    font-family: var(--fonte-principal);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.descricao {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+
+    font-family: var(--fonte-principal);
+    color: var(--texto-cor-principal);
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.125rem;
+}
+
+.aula {
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profissional {
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tags {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5625rem;
+}
+
+.tag {
+    padding: 0rem 0.625rem;
+    border-radius: 6.25rem;
+    background: #FFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.perfil {
+    object-fit: cover;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 3.125rem;
+}

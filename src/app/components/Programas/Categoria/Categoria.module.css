@@ -1,0 +1,35 @@
+.categoria {
+    display: flex;
+    padding: 0.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.nome_categoria {
+    color: var(--Texto-Principal, #000);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nome_categoria span {
+    color: var(--Principal, #18A0FB);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 2.0625rem;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}

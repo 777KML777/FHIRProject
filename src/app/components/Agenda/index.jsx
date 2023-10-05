@@ -17,16 +17,17 @@ function Agenda() {
     console.log(Categorias)
     return (
         <>
-           
-            <div className={styles.container}>
-                <div className={styles.side}>
-                    <Calendario />
-                    <Categorias />
-                    <Consultas />
-                </div>
-                <div className={styles.main}>
-                    <Estados />
-                    <Tarefas />
+            <div className={styles.corpo}>
+                <div className={styles.container}>
+                    <div className={styles.side}>
+                        <Calendario />
+                        <Categorias />
+                        <Consultas />
+                    </div>
+                    <div className={styles.main}>
+                        <Estados />
+                        <Tarefas />
+                    </div>
                 </div>
             </div>
             <Modal classe={ativo} tela={Categorias}>

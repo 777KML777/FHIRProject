@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit {
+    border: none;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    background: var(--cor-principal);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reset {
+    border: none;
+    background: none;
+    color: var(--Principal, #18A0FB);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+    cursor: pointer;
+}

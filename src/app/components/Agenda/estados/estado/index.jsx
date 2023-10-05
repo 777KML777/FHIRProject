@@ -22,7 +22,7 @@ function Estado({ listaEstados }) {
                             <p className={styles.nome}>{estados.nome}</p>
                             <div className={styles.container_estado}>
                                 <div className={styles.icone}>
-                                    <FontAwesomeIcon icon={i} />
+                                    <FontAwesomeIcon icon={i} size="2x"/>
                                 </div>
                             </div>
                             <p className={styles.resultado}>{estados.resultados}<span>{estados.prefix}</span></p>

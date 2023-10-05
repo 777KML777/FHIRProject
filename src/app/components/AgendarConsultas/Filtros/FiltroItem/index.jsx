@@ -19,6 +19,7 @@ function FiltroItem({ filtros }) {
                                     )
                                 })
                                 : ""}
+                            
                             {filtro.tipo === "texto" ?
                                     <input type="text" placeholder={filtro.placeholder} className={styles.pesquisa} />
                                 : ""}
