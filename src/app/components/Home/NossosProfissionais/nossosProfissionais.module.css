@@ -70,13 +70,20 @@
 }
 
 .img_profissional {
-    background-image: url(./images/Foto.png);
-    width: 30rem;
+    /* background-image: url(./images/Foto.png); */
+    width: 100%;
+    overflow: hidden;
     height: 20.625rem;
+}
+
+.img_profissional img{
+    object-fit: contain;
+    width: 100%;
 }
 
 .sobre_profissional {
     padding: 1.125rem 0.813rem;
+    background-color: #FFF;
 }
 
 .profissional_selecionado h1 {

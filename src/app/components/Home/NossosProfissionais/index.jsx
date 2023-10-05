@@ -23,7 +23,7 @@ export default function NossosProfissionais(props) {
             </div>
             
             <div className={styles.doutores_foto}>  
-              <div className={styles.icone_doc}><button onClick={() => trocarDoutor(2)}><img src="https://i.imgur.com/bqXHIGw.png" alt="Doutor" /></button></div>
+              <div className={styles.icone_doc}><button onClick={() => trocarDoutor(2)}><img src={props.props[2]?.descricao.code.coding[0].system} alt="Doutor" /></button></div>
               <div className={styles.icone_doc}><img src="https://i.imgur.com/J6ro0aF.png" alt="Doutor" /></div>
               <div className={styles.icone_doc}><img src="https://i.imgur.com/m2eOQCF.png" alt="Doutor" /></div>
               <div className={styles.icone_doc}><img src="https://i.imgur.com/8HWCd4j.png" alt="Doutor" /></div>
@@ -32,16 +32,10 @@ export default function NossosProfissionais(props) {
             </div>
           </div>
           <div className={styles.profissional_selecionado}>
-              <div className={styles.img_profissional}></div>
+              <div className={styles.img_profissional}><img src={props.props[doutorSelecionado]?.descricao.code.coding[0].system} alt="Doutor (a)" /></div>
               <div className={styles.sobre_profissional}>
                 <h1>{props.props[doutorSelecionado]?.nome}</h1>
-                <p>A minha missão é promover o bem-estar emocional 
-                  e mental dos meus clientes. Através de terapia 
-                  personalizada, ofereço um espaço seguro para 
-                  explorar pensamentos, emoções e desafios, 
-                  auxiliando no desenvolvimento de habilidades de 
-                  enfrentamento saudáveis e no alcance de uma vida 
-                  mais equilibrada e feliz.</p>
+                <p>{props.props[doutorSelecionado]?.descricao.code.text}</p>
               </div>
             </div>
         </section>
