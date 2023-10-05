@@ -3,6 +3,7 @@
     align-items: center;
     background-color: var(--cor-plano-de-fundo);
     gap: 2.5rem;
+    margin: 2.5rem 0rem;
 }
 
 .container img {

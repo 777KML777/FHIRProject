@@ -1,11 +1,13 @@
 .tabela {
     width: 50%;
-    text-align: center;
+    text-align: center; 
+    margin-bottom: 3rem;  
 }
 
 .legenda {
     font-size: 32px;
     text-align: left;
+    margin-bottom: 2.5rem;
 }
 
 .tabela_linha {

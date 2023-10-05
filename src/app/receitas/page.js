@@ -22,14 +22,16 @@ export default function () {
 
   return (
     <>
-      <div className="container">
-        <div className="cabecalho">
-          <Cabecario />
-        </div>
-        <div className="body">
-          <DadosBeneficiario />
-          <div>
-            <Receitas props={receitas?.data} />
+      <div className="body">
+        <div className="container">
+          <div className="cabecalho">
+            <Cabecario />
+          </div>
+          <div className="body">
+            <DadosBeneficiario />
+            <div>
+              <Receitas props={receitas?.data} />
+            </div>
           </div>
         </div>
       </div>
