@@ -52,7 +52,8 @@
         max-width: 640px;
         flex-direction: column;
     }
-    .side{
+
+    .side {
         flex-direction: row;
         width: 100%;
     }
@@ -63,7 +64,8 @@
     .container {
         max-width: 475px;
     }
-    .side{
+
+    .side {
         flex-direction: column;
     }
 }

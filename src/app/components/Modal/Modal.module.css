@@ -1,0 +1,40 @@
+.background{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+}
+
+.modal{
+    overflow: hidden;
+    border: 1px solid #BEBEBE;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    margin: auto;
+    width: 50%;
+    background-color: #fff;
+}
+
+.ativo{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+}
+
+.desativado{
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: #e2e2e2;
+}
+
+.icone{
+    color: #000;
+}
