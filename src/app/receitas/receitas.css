@@ -5,6 +5,11 @@
 
 }
 
+.filtro {
+    display: flex;
+    gap: 0.625rem;
+}
+
 .container {
     max-width: 1536px;
     margin-left: auto;

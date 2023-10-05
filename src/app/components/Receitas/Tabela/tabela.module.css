@@ -1,13 +1,41 @@
 .tabela {
-    width: 50%;
+    width: 69rem;
+    /* width: 50%; */
     text-align: center; 
-    margin-bottom: 3rem;  
+    margin-bottom: 3rem;
 }
 
 .legenda {
     font-size: 32px;
     text-align: left;
     margin-bottom: 2.5rem;
+    gap: 0.625rem;
+    padding: 0.625rem;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+}
+
+.documentos {
+    color: #9C9C9C;;
+    font-weight: 600;
+}
+
+.chevron_icon {
+    color: #9C9C9C;
+}
+
+.receitas {
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 0.62rem;
 }
 
 .tabela_linha {

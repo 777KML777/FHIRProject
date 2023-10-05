@@ -13,9 +13,15 @@ export default function Receita(props) {
       <div className={styles.container_table}>
         <table className={styles.tabela}>
           <caption className={styles.legenda}>
-            Documentos
-            <FontAwesomeIcon className={styles.chevron_icon} icon={faChevronRight} />
-            Receitas
+            <div className={styles.subtitle}>
+              <div className={styles.documentos}>
+                Documentos
+              </div>
+              <FontAwesomeIcon className={styles.chevron_icon} icon={faChevronRight} />
+              <div className={styles.receitas}>
+                Receitas
+              </div>
+            </div>
           </caption>
           <thead>
             <tr className={styles.tabela_linha}>

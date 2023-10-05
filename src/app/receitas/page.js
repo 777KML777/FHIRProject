@@ -5,6 +5,9 @@ import api from "../api/requests";
 import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
 import "./receitas.css";
 import Cabecario from "../components/Receitas/Cabecario";
+import Filtrar from "../components/Agenda/tarefas/filtrar";
+import Ordenar from "../components/Agenda/tarefas/ordenar";
+import Pesquisa from "../components/Agenda/tarefas/pesquisa";
 
 import "../database/mock";
 
@@ -28,7 +31,12 @@ export default function () {
             <Cabecario />
           </div>
           <div className="body">
-            <DadosBeneficiario />
+              <DadosBeneficiario />
+              <div className="filtro">
+                <Pesquisa/>
+                <Ordenar/>
+                <Filtrar/>
+              </div>
             <div>
               <Receitas props={receitas?.data} />
             </div>
