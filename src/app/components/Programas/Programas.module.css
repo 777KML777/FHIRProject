@@ -1,5 +1,7 @@
 .main{
     background: var(--cor-plano-de-fundo);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .container {

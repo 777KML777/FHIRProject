@@ -1,3 +1,9 @@
+.corpo{
+    background: var(--cor-plano-de-fundo);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 .container {
     max-width: 1536px;
     margin-left: auto;
@@ -52,7 +58,8 @@
         max-width: 640px;
         flex-direction: column;
     }
-    .side{
+
+    .side {
         flex-direction: row;
         width: 100%;
     }
@@ -63,7 +70,8 @@
     .container {
         max-width: 475px;
     }
-    .side{
+
+    .side {
         flex-direction: column;
     }
 }
