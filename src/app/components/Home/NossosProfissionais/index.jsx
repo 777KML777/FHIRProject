@@ -23,12 +23,12 @@ export default function NossosProfissionais(props) {
             </div>
             
             <div className={styles.doutores_foto}>  
-              <div className={styles.icone_doc}><button onClick={() => trocarDoutor(2)}><img src={props.props[2]?.descricao.code.coding[0].system} alt="Doutor" /></button></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/J6ro0aF.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/m2eOQCF.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/8HWCd4j.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/GsWwFgf.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/squCHoa.png" alt="Doutor" /></div>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(0)}><img src={props.props[0]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(1)}><img src={props.props[1]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(2)}><img src={props.props[2]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(3)}><img src={props.props[3]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(4)}><img src={props.props[4]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(5)}><img src={props.props[5]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
             </div>
           </div>
           <div className={styles.profissional_selecionado}>

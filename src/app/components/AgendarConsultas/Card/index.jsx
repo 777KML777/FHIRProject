@@ -11,7 +11,7 @@ function CardAgendarConsulta(props) {
     return (
         <div className={styles.container}>
             <div className={styles.cabecalho}>
-                <div className={styles.foto}></div>
+                <div className={styles.foto}><img  src={props.props.descricao.code.coding[0]?.system} alt="" /></div>
                 <div className={styles.perfil}>
                     <div className={styles.nome_medico}>Dra. {props.props.nome}</div>
                     <div className={styles.endereco}> <FontAwesomeIcon icon={faLocationDot} className={styles.icone_endereco} /> {props.props.endereco.cidade} - {props.props.endereco.estado}</div>
