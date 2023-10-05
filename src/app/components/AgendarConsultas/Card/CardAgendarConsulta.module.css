@@ -101,6 +101,8 @@
     font-weight: 400;
     line-height: 1.28125rem;
     /* 170.833% */
+    height: 10rem;
+    overflow: hidden;
 }
 
 .especialidades {
