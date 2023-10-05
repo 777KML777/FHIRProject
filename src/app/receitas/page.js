@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import Receita from "../components/Receitas/Receita";
+import Receitas from "../components/Receitas/Tabela";
 import api from "../api/requests";
 import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
-import styles from "./receitas.module.css"
+import "./receitas.css";
+import Cabecario from "../components/Receitas/Cabecario";
 
 import "../database/mock";
 
@@ -21,10 +22,15 @@ export default function () {
 
   return (
     <>
-      <div className={styles.body}>
-        <DadosBeneficiario />
-        <div>
-          <Receita props={receitas?.data} />
+      <div className="container">
+        <div className="cabecalho">
+          <Cabecario />
+        </div>
+        <div className="body">
+          <DadosBeneficiario />
+          <div>
+            <Receitas props={receitas?.data} />
+          </div>
         </div>
       </div>
     </>

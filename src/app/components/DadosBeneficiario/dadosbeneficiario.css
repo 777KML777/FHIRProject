@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1104px;
     padding: 30px 40px;
     border-radius: 10px;
     background-color: #18A0FB;
@@ -13,10 +12,9 @@
 .titulo {
     display: flex;
     width: 100%;
-    max-width: 1024px;
     padding-bottom: 0px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.625rem;
     border-bottom: 1px solid #FFF;
     margin-bottom: 1.875rem;
 }
@@ -39,12 +37,11 @@
 
 .alt-dados-cad {
     display: flex;
-    max-width: 384px;
-    width: 100%;
-    height: 49.254px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    padding: 0.625rem 3.125rem;
+    gap: 0.625rem;
     border-radius: 5px;
     border: 2px solid #FFF;
     cursor: pointer;
@@ -53,16 +50,66 @@
 
 .del-cadastro {
     display: flex;
-    height: 49.254px;
-    padding: 0px 50px;
+    padding: 0.625rem 3.125rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 5px;
+    gap: 0.625rem;
+    border-radius: 0.313rem;
     cursor: pointer;
+    border: 2px solid #FF4949;
     background: #FF4949;
 }
 
 .icone {
     width: 1.3rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+        flex-direction: column;
+    }
+    .side{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+    .side{
+        flex-direction: column;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
 }

@@ -16,7 +16,6 @@
 
 .form {
     display: flex;
-    max-width: 38.875rem;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,6 @@
 
 .titulo {
     width: 100%;
-    max-width: 30.875rem;
     height: 2.25rem;
     font-size: 28px;
     font-weight: 700;
@@ -46,7 +44,6 @@
 }
 
 .input-box input {
-    max-width: 14.375rem;
     width: 100%;
     height: 2.5rem;
     padding: 0.5rem 0.875rem;
