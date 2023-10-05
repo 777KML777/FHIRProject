@@ -1,6 +1,18 @@
+import { useState } from "react";
 import styles from "./nossosProfissionais.module.css";
 
-export default function NossosProfissionais() {
+export default function NossosProfissionais(props) {
+  let index = 0;
+  const [doutorSelecionado, setDoutorSelecionado] = useState(0);
+
+  const trocarDoutor = (param) => {
+    index = param; 
+    setDoutorSelecionado(index);
+    console.log(index);
+  }
+  console.log('estou no componente nossos profissionais')
+  console.log(props)
+  
   return (
     <>
        <section className={styles.profissionais}>
@@ -11,25 +23,19 @@ export default function NossosProfissionais() {
             </div>
             
             <div className={styles.doutores_foto}>  
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/bqXHIGw.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/J6ro0aF.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/m2eOQCF.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/8HWCd4j.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/GsWwFgf.png" alt="Doutor" /></div>
-              <div className={styles.icone_doc}><img src="https://i.imgur.com/squCHoa.png" alt="Doutor" /></div>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(0)}><img src={props.props[0]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(1)}><img src={props.props[1]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(2)}><img src={props.props[2]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(3)}><img src={props.props[3]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(4)}><img src={props.props[4]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
+              <button className={styles.icone_doc}  onClick={() => trocarDoutor(5)}><img src={props.props[5]?.descricao.code.coding[0]?.system} alt="Doutor" /></button>
             </div>
           </div>
           <div className={styles.profissional_selecionado}>
-              <div className={styles.img_profissional}></div>
+              <div className={styles.img_profissional}><img src={props.props[doutorSelecionado]?.descricao.code.coding[0].system} alt="Doutor (a)" /></div>
               <div className={styles.sobre_profissional}>
-                <h1>Gabriela</h1>
-                <p>A minha missão é promover o bem-estar emocional 
-                  e mental dos meus clientes. Através de terapia 
-                  personalizada, ofereço um espaço seguro para 
-                  explorar pensamentos, emoções e desafios, 
-                  auxiliando no desenvolvimento de habilidades de 
-                  enfrentamento saudáveis e no alcance de uma vida 
-                  mais equilibrada e feliz.</p>
+                <h1>{props.props[doutorSelecionado]?.nome}</h1>
+                <p>{props.props[doutorSelecionado]?.descricao.code.text}</p>
               </div>
             </div>
         </section>

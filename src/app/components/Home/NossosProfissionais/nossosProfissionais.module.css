@@ -50,33 +50,53 @@
     padding: 0.625rem;
     align-items: flex-start;
     gap: 0.625rem;
+    background: none;
     border-radius: 0.625rem;
     border: 2px solid #18A0FB;
     height: 10.625rem;
     width: 10.625rem;
+    overflow: hidden;
+    
 }
 
 .icone_doc img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .profissional_selecionado {
     width: 30rem;
-    height: 37.5rem;
     color: var(--texto-cor-principal);
+    height: 100%;
     border-radius: 0.313rem;
     border: 1px solid rgba(0, 0, 0, 0.50);
 }
 
 .img_profissional {
-    background-image: url(./images/Foto.png);
-    width: 30rem;
+    /* background-image: url(./images/Foto.png); */
+    width: 100%;
+    overflow: hidden;
     height: 20.625rem;
+}
+
+.img_profissional img{
+    object-fit: contain;
+    width: 100%;
 }
 
 .sobre_profissional {
     padding: 1.125rem 0.813rem;
+    background-color: #FFF;
+}
+
+.sobre_profissional p{
+    text-overflow: ellipsis;
+}
+
+.profissional_selecionado {
+    max-height: 100%;
 }
 
 .profissional_selecionado h1 {
