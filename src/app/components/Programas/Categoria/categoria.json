@@ -1,0 +1,14 @@
+[
+    {
+        "destaque" :"RECOMENDADOS",
+        "categoria" : ""
+    },
+    {
+        "destaque" :"SONO",
+        "categoria" : "Aulas mais votadas sobre"
+    },
+    {
+        "destaque" :"SONO",
+        "categoria" : "Aulas mais recentes sobre"
+    }
+]

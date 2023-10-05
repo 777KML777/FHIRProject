@@ -1,0 +1,12 @@
+.conteudo{
+    background: var(--cor-plano-de-fundo);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+}
