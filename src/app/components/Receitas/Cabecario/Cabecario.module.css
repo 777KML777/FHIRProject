@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-plano-de-fundo);
+    gap: 2.5rem;
+    margin: 2.5rem 0rem;
+}
+
+.container img {
+    border: 2px solid #fff;
+}
+
+.foto {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 7.5rem;
+}
+
+.textos {
+    font-family: var(--fonte-principal);
+    color: var(--texto-cor-principal);
+
+}
+
+.nome {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.dados {
+    font-size: 1rem;
+}
