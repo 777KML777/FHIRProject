@@ -7,8 +7,8 @@ function Programas() {
     return (
         <>
             <div className={styles.main}>
-                <div className={styles.container}>
 
+                <div className={styles.container}>
                     <div className={styles.tags}>
                         <Botao />
                     </div>
@@ -16,6 +16,7 @@ function Programas() {
                         <CategoriaProgramas />
                     </div>
                 </div>
+                
             </div>
         </>
     )

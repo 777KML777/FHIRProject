@@ -7,7 +7,7 @@ function Estados() {
     return (
         <>
             <div className={styles.container}>
-                <Estado listaEstados={listaEstados} />
+                <Estado listaEstados={listaEstados}/>
             </div>
         </>
     )
