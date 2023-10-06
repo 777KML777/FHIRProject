@@ -20,7 +20,7 @@ export default function Header() {
             <Link href="./receitas" className={styles.text_item_header}>Receitas</Link>
           </div>
 
-          <img src="https://i.imgur.com/577Zgqo.png" alt="Klebao" className={styles.icon_img}>
+          <img src="https://i.imgur.com/NbKQ5o0.png" alt="Klebao" className={styles.icon_img}>
 
           </img>
 
