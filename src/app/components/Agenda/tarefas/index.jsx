@@ -22,7 +22,6 @@ function Tarefas() {
                     <div className={styles.filtros}>
                         <Pesquisa />
                         <Ordenar />
-                        <Filtrar />
                     </div>
                     <div className={styles.nova_tarefa}>+ Nova Tarefa</div>
                 </div>

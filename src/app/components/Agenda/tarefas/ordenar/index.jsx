@@ -5,7 +5,7 @@ import { faArrowUpWideShort } from '@fortawesome/free-solid-svg-icons'
 function Ordenar() {
     return (
         <>
-            <div className={styles.container}>
+            <label className={styles.container} for='ordenar'>
                 <FontAwesomeIcon icon={faArrowUpWideShort} className={styles.icone}/>
                 <select name="ordenar" id="ordenar" >
                     <option value="ordenar">Ordenar</option>
@@ -13,7 +13,7 @@ function Ordenar() {
                     <option value="alfabetica">Alfábetica</option>
                     <option value="horario">Horário</option>
                 </select>
-            </div>
+            </label>
         </>
     )
 }

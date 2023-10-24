@@ -8,6 +8,7 @@
 .filtro {
     display: flex;
     gap: 0.625rem;
+    margin-bottom: 2rem;
 }
 
 .container {
@@ -21,7 +22,36 @@
     flex-direction: column;
     align-items: center;
     background: #D4DFF5;
-    
+}
+
+.legenda {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+}
+
+
+.documentos {
+    color: #9C9C9C;
+    ;
+    font-weight: 600;
+}
+
+.chevron_icon {
+    color: #9C9C9C;
+}
+
+.receitas {
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 0.62rem;
 }
 
 /* 2xl */
@@ -51,7 +81,8 @@
         max-width: 640px;
         flex-direction: column;
     }
-    .side{
+
+    .side {
         flex-direction: row;
         width: 100%;
     }
