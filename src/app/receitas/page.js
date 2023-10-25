@@ -16,12 +16,29 @@ export default function () {
 
   const pegarReceitas = async () => {
     const response = await api.get("/receitas");
-    setReceitas(response);
+    setReceitas(response.data);
   };
 
   useEffect(() => {
     pegarReceitas();
   }, []);
+
+  const [valorPesquisa, setValorPesquisa] = useState("");
+
+  /* Filtro Pesquisa */
+  const pesquisa = (valor) => {
+    let novaLista = []
+    setValorPesquisa(valor.toLowerCase())
+    novaLista = receitas?.map((e) => {
+      const nomeArquivo = e.arquivo.toLowerCase()
+
+      if (nomeArquivo.includes(valor.toLowerCase())) {
+        return e
+      }
+      console.log(novaLista)
+    }) 
+    /* setReceitas(novaLista) */
+  }
 
   return (
     <>
@@ -31,14 +48,16 @@ export default function () {
             <Cabecario />
           </div>
           <div className="body">
-              <DadosBeneficiario />
-              <div className="filtro">
-                <Pesquisa/>
-                <Ordenar/>
-                <Filtrar/>
-              </div>
+            <DadosBeneficiario />
+            <div className="filtro">
+              <Pesquisa
+                pesquisa={pesquisa}
+              />
+              <Ordenar />
+              <Filtrar />
+            </div>
             <div>
-              <Receitas props={receitas?.data} />
+              <Receitas props={receitas} />
             </div>
           </div>
         </div>
