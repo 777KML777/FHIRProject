@@ -17,6 +17,7 @@ export default function () {
   const pegarReceitas = async () => {
     const response = await api.get("/receitas");
     setReceitas(response.data);
+    
   };
 
   useEffect(() => {
@@ -33,13 +34,14 @@ export default function () {
       const nomeArquivo = e.arquivo.toLowerCase()
 
       if (nomeArquivo.includes(valor.toLowerCase())) {
-        return e
+        novaLista.push(e)
+      } else{
+        pegarReceitas()
       }
-      console.log(novaLista)
     }) 
-    /* setReceitas(novaLista) */
+    setReceitas(novaLista)
+    console.log(receitas)
   }
-
   return (
     <>
       <div className="body">
