@@ -1,0 +1,22 @@
+.dado{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.nome{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.campo{
+    color: var(--texto-cor-secundaria);
+    background: none;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    max-width: 100%;
+}
+
+.campo:not(:disabled){
+    border-bottom: 1px solid #fff;
+}

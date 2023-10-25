@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Receitas from "../components/Receitas/Tabela";
 import api from "../api/requests";
-import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
+import DadosBeneficiario from "../components/Receitas/DadosBeneficiario";
 import "./receitas.css";
 import Cabecario from "../components/Receitas/Cabecario";
 import Filtrar from "../components/Agenda/tarefas/filtrar";
