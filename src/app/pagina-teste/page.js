@@ -1,5 +1,3 @@
-import DadosBeneficiario from "../components/DadosBeneficiario/DadosBeneficiario";
-
 export default function Teste() {
     return (
       <>
