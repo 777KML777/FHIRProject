@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.container input[type="text"]{
+    min-width: 20rem;
+}
+
 .container input::placeholder {
     color: #707070;
     font-size: 1rem;
@@ -38,6 +42,8 @@
     font-weight: 600;
     line-height: normal;
 }
+
+
 
 
 .checkbox {

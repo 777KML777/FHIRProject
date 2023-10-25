@@ -13,8 +13,6 @@ import Modal from '../Modal'
 
 function Agenda() {
     const [ativo, setAtivo] = useState("False")
-    
-    console.log(Categorias)
     return (
         <>
             <div className={styles.corpo}>

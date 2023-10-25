@@ -1,6 +1,6 @@
 [
     {
-        "tipo": "texto",
+        "tipo": "text",
         "categoria": "Nome Completo",
         "placeholder": "Seu nome completo"
     },
@@ -15,7 +15,7 @@
         "placeholder": "00 00000-0000"
     },
     {
-        "tipo": "texto",
+        "tipo": "text",
         "categoria": "Quais seriam os principais motivos para buscar atrendimento com os profissionais da MindCare?",
         "placeholder": "Motivos"
     },
@@ -29,7 +29,7 @@
         ]
     },
     {
-        "tipo": "texto",
+        "tipo": "text",
         "categoria": "Quais seus horário disponíveis para o atendimento?",
         "placeholder": "Insira os horarios separados por espaço"
     }
