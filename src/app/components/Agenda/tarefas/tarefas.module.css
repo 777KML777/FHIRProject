@@ -5,6 +5,8 @@
     align-items: center;
     border-radius: 0.3125rem;
     border: 1px solid #BEBEBE;
+    overflow: hidden;
+    width: 100%;
 }
 
 .cabecario {
@@ -15,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     background: #FFF;
+    width: 100%;
 }
 
 .exibicoes {

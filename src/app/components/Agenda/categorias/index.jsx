@@ -11,8 +11,8 @@ function Categorias() {
                     {categorias.map((item) => {
                         return (
                             <div className={styles.categoria_item}>
-                                <input type="checkbox" />
-                                <label>{item.categoria}</label>
+                                <input type="checkbox" name={item.categoria} id={item.categoria}/>
+                                <label for={item.categoria}>{item.categoria} </label>
                             </div>
                         )
                     })}
