@@ -9,6 +9,9 @@ import Filtrar from "../components/Agenda/tarefas/filtrar";
 import Ordenar from "../components/Agenda/tarefas/ordenar";
 import Pesquisa from "../components/Agenda/tarefas/pesquisa";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 import "../database/mock";
 
 export default function () {
@@ -49,10 +52,24 @@ export default function () {
           </div>
           <div className="body">
             <DadosBeneficiario />
+
+            <div className="legenda">
+              <div className="documentos">
+                Documentos
+              </div>
+              <FontAwesomeIcon className="chevron_icon" icon={faChevronRight} />
+              <div className="receitas">
+                Receitas
+              </div>
+            </div>
+            <div className="filtro">
+              <Pesquisa />
+
             <div className="filtro">
               <Pesquisa
                 pesquisa={pesquisa}
               />
+
               <Ordenar />
               <Filtrar />
             </div>

@@ -9,7 +9,8 @@ function Campo() {
                     <div className={styles.container} key={campo.categoria}>
                         <label name={campo.categoria} for={campo.categoria} >{campo.categoria}</label>
                         {
-                            campo.tipo === "checkbox" ?
+                            campo.tipo === "checkbox"
+                                ?
                                 campo.opcoes.map((opcao) => {
                                     return (
                                         <div className={styles.checkbox} key={opcao}>
@@ -18,10 +19,17 @@ function Campo() {
                                         </div>
                                     )
                                 })
-                                : <>
-                                    <input type={campo.tipo} name={campo.categoria} id={campo.categoria} placeholder={campo.placeholder} 
-                                    pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" min='0' max='100' required/>
-                                </>
+                                :
+                                campo.tipo === "tel"
+                                    ?
+                                    <input type={campo.tipo} name={campo.categoria} id={campo.categoria} placeholder={campo.placeholder}
+                                        pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required />
+                                    :
+                                    campo.tipo === "number"
+                                        ?
+                                        <input type={campo.tipo} name={campo.categoria} id={campo.categoria} placeholder={campo.placeholder} min='0' max='100' required />
+                                        :
+                                        <input type="text" name={campo.categoria} id={campo.categoria} placeholder={campo.placeholder} />
 
                         }
 
@@ -33,9 +41,3 @@ function Campo() {
 }
 
 export default Campo
-
-/*                         {campo.tipo === "texto" ?
-                            <>
-                                <input type="text" name={campo.categoria} id={campo.categoria} placeholder={campo.placeholder} />
-                            </>
-                            : ""} */

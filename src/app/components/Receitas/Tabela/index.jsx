@@ -12,17 +12,6 @@ export default function Receita(props) {
     <>
       <div className={styles.container_table}>
         <table className={styles.tabela}>
-          <caption className={styles.legenda}>
-            <div className={styles.subtitle}>
-              <div className={styles.documentos}>
-                Documentos
-              </div>
-              <FontAwesomeIcon className={styles.chevron_icon} icon={faChevronRight} />
-              <div className={styles.receitas}>
-                Receitas
-              </div>
-            </div>
-          </caption>
           <thead>
             <tr className={styles.tabela_linha}>
               <th>Arquivo</th>
@@ -31,6 +20,7 @@ export default function Receita(props) {
               <th>Area</th>
               <th>Data De Emissão</th>
               <th>Data De Validade</th>
+              <th></th>
             </tr>
           </thead>
 
@@ -48,11 +38,13 @@ export default function Receita(props) {
                 <td className={styles.tabela_data}>
                   <div className={styles.last_column}>
                     {receita.dataDeValidade}
-                    <FontAwesomeIcon
-                      className={styles.download_icon}
-                      icon={faDownload}
-                    />
                   </div>
+                </td>
+                <td>
+                  <FontAwesomeIcon
+                    className={styles.download_icon}
+                    icon={faDownload}
+                  />
                 </td>
               </tr>
             ))}

@@ -6,8 +6,6 @@ import { faPenToSquare} from '@fortawesome/free-solid-svg-icons'
 export default function DadosBeneficiario() {
   return (
     <>
-      {/* Aqui você irá colocar o seu código HTML para usar em qualquer página */}
-      
       <section className="dados-beneficiario">
         <div className="titulo">
           <h2>Dados do Beneficiário</h2>

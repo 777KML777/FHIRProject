@@ -30,7 +30,7 @@ function CardAgendarConsulta(props) {
                     </ul>
                 </div>
             </div>
-            <div className={styles.botao}>Agendar Consulta</div>
+            <a className={styles.botao} href="./ListaEspera">Agendar Consulta</a>
         </div>
     )
 }

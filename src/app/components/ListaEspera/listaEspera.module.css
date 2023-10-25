@@ -1,5 +1,6 @@
 .conteudo{
     background: var(--cor-plano-de-fundo);
+    padding: 2rem 0;
 }
 
 .container{
@@ -7,6 +8,5 @@
     flex-direction: column;
     gap: 2rem;
     max-width: 1550px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }

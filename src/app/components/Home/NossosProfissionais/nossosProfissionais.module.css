@@ -73,6 +73,7 @@
     border-radius: 0.313rem;
     border: 1px solid rgba(0, 0, 0, 0.50);
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .img_profissional {
