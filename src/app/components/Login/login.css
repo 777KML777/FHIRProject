@@ -1,0 +1,127 @@
+.corpp {
+    display: flex;
+    background: #D4DFF5;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.container {
+    display: flex;
+    border: none;
+    border-radius: 0.625rem;
+    filter: drop-shadow(0px 7px 60px rgba(0, 0, 0, 0.25));
+}
+
+.titulo {
+    color: #000;
+}
+
+.login {
+    display: flex;
+    width: 36.313rem;
+    height: 30.75rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.938rem 0 0 0.938rem;
+    background-color: #fff;
+}
+
+form .input_email {
+    outline: unset;
+    width: 319px;
+    height: 54px;
+    margin-top: 1.30rem;
+    padding: 0.94rem 0rem 0.94rem 1.94rem;
+    border-radius: 0.63rem;
+    border: none;
+    margin-bottom: 2.19rem;
+    background: #E1E1E1;
+    color: #6F6F6F;
+}
+.senha {
+    display: flex;
+}
+
+form .input_senha {
+    display: flex;
+    outline: unset;
+    width: 13.75rem;
+    height: 3.375rem;
+    margin-right: 1.19rem;
+    padding: 0.94rem 0rem 0.94rem 1.94rem;
+    border-radius: 0.63rem;
+    border: none;
+    margin-bottom: 1.81rem;
+    background: #E1E1E1;
+    color: #6F6F6F;
+}
+
+.icon {
+    display: flex;
+    width: 3.375rem;
+    height: 3.375rem;
+    background-image: url(./image/abertoBranco.svg);
+    background-size: 27px 20px;
+    background-position: center;
+    cursor: pointer;
+    padding: 1.25rem 1rem 1.19rem 1rem;
+    background-repeat: no-repeat;
+    border-radius: 0.63rem;
+    background-color: #18A0FB;
+}
+
+.cadastro {
+    display: flex;
+    width: 23.688rem;
+    height: 30.75rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0.938rem 0.938rem 0;
+    color: #FFF;
+    background-color: #18A0FB;
+}
+
+.cadastro p {
+    display: flex;
+    height: 1.0625rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.56rem;
+}
+
+.cadastro h4 {
+    display: flex;
+    width: 15.8125rem;;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 1.87rem;
+}
+
+.login_button {
+    width: 13.75rem;
+    height: 3.375rem;
+    border-radius: 0.63rem;
+    border: none;
+    cursor: pointer;
+    background: #18A0FB;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cadastrar_button {
+    width: 13.75rem;
+    height: 3.375rem;
+    border-radius: 0.63rem;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    color: #6F6F6F;
+    font-size: 1rem;
+    font-weight: 500;
+}
