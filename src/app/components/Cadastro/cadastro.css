@@ -1,22 +1,27 @@
+.corp {
+    background-color: #D4DFF5;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .login {
     display: flex;
     width: 353px;
     height: 562px;
-    margin-top: 8rem;
-    margin-left: 8%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0rem 3.125rem;
     border-radius: 0.938rem 0rem 0rem 0.938rem;
     color: #18A0FB;
+    background-color: #fff;
 }
 
 .login p {
