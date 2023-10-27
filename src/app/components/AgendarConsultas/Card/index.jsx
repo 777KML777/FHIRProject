@@ -25,7 +25,9 @@ function CardAgendarConsulta(props) {
                 <div className={styles.especialidades}>
                     <div className={styles.especialidades_titulo}>ESPECIALIDADES</div>
                     <ul className={styles.especialidades_lista}>
-                        <li className={styles.especialidades_servico}>{props.props.descricao.qualificacoes}</li>
+                        <li className={styles.especialidades_servico}>{props.props.descricao.qualificacoes ?
+                        props.props.descricao.qualificacoes : 'Physician'
+                        }</li>
                         <li className={styles.especialidades_servico}>Psiquiatria</li>
                     </ul>
                 </div>
