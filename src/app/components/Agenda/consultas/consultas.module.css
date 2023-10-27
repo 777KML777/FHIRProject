@@ -107,4 +107,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao:hover{
+    border: 2px solid var(--cor-principal);
+    background: var(--cor-principal);
+    color: #fff;
 }

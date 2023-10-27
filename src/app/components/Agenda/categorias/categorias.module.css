@@ -28,6 +28,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.9375rem;
+    cursor: pointer;
 }
 
 .categoria_item label {
@@ -38,6 +39,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer;
+}
+
+.categoria_item input{
+    cursor: pointer;
 }
 
 .botao {
@@ -52,4 +58,5 @@
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
+    cursor: pointer;
 }

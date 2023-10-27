@@ -9,7 +9,6 @@
 
 .navigation_header {
     display: flex;
-    padding: 0rem 3.125rem;
     gap: 2.6875rem;
     align-items: center;
     align-self: stretch;
