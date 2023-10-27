@@ -7,6 +7,7 @@ import Filtrar from './filtrar'
 import ItemTarefa from './itemTarefa'
 
 function Tarefas() {
+    const opcoes = ["nome", "data", "hora"]
     return (
         <>
             <div className={styles.container}>
@@ -21,7 +22,9 @@ function Tarefas() {
                     </div>
                     <div className={styles.filtros}>
                         <Pesquisa />
-                        <Ordenar />
+                        <Ordenar
+                            props={opcoes}
+                        />
                     </div>
                     <div className={styles.nova_tarefa}>+ Nova Tarefa</div>
                 </div>
