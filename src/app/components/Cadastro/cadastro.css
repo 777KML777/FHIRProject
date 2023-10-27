@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.login {
+    display: flex;
+    width: 353px;
+    height: 562px;
+    margin-top: 8rem;
+    margin-left: 8%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 3.125rem;
+    border-radius: 0.938rem 0rem 0rem 0.938rem;
+    color: #18A0FB;
+}
+
+.login p {
+    margin-bottom: 1.69rem;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.login h4 {
+    margin-bottom: 1.31rem;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.0675rem;
+}
+
+.login_button {
+    width: 13.75rem;
+    height: 3.375rem;
+    border-radius: 0.63rem;
+    border: none;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;    
+    background-color: #18A0FB;
+}
+
+.cadastro {
+    width: 607px;
+    height: 562px;
+    display: flex;
+    padding: 0rem 3.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0rem 0.938rem 0.938rem 0rem;
+    background-color: #18A0FB;
+}
+
+.form_header h2 {
+    margin-bottom: 2.12rem;
+}
+
+.input {
+    width: 13.75rem;
+    height: 3.375rem;
+    border-radius: 0.63rem;
+    border: none;
+    padding: 0.94rem 0rem 0.94rem 1.94rem;
+    color: #6F6F6F;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #E1E1E1;
+}
+
+.input_group {
+    display: flex;
+    width: 29.125rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.625rem 1.25rem;
+    margin-bottom: 2.19rem;
+    flex-wrap: wrap;
+}
+
+.input_endereco {
+    width: 29.125rem;
+    height: 3.375rem;
+    border-radius: 0.625rem;
+    border: none;
+    padding: 0.94rem 0rem 0.94rem 1.94rem;
+    background: #E1E1E1;
+    color: #6F6F6F;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cadastrar_button {
+    width: 13.75rem;
+    height: 3.375rem;
+    font-family: Poppins;
+    border-radius: 0.63rem;
+    border: none;   
+    color: #6F6F6F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #FFF;
+}
