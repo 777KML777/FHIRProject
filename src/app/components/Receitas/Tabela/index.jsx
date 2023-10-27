@@ -24,9 +24,11 @@ export default function Receita(props) {
               <th></th>
             </tr>
           </thead>
-
           <tbody>
-            {props.props?.map((receita) => (
+            {props.props?.map((receita) => {
+              
+              return(
+              
               <tr key={receita.id} className={styles.tabela_linha}>
                 <td className={styles.tabela_data}>
                   <FontAwesomeIcon className={styles.folder_icon} icon={faFolder} />
@@ -48,8 +50,10 @@ export default function Receita(props) {
                   />
                 </td>
               </tr>
-            ))}
+            )})}
           </tbody>
+
+
         </table>
       </div>
     </>

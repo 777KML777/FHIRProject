@@ -2,16 +2,16 @@ import styles from './ordenar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpWideShort } from '@fortawesome/free-solid-svg-icons'
 
-function Ordenar() {
+function Ordenar({props, ordenarReceitas}) {
     return (
         <>
             <label className={styles.container} for='ordenar'>
                 <FontAwesomeIcon icon={faArrowUpWideShort} className={styles.icone}/>
-                <select name="ordenar" id="ordenar" >
+                <select name="ordenar" id="ordenar" onChange={e=>ordenarReceitas(e.target.value)} >
                     <option value="ordenar">Ordenar</option>
-                    <option value="data">Data</option>
-                    <option value="alfabetica">Alfábetica</option>
-                    <option value="horario">Horário</option>
+                    {props.map(e => {
+                        return <option key={e} value={e}>{e}</option>
+                    })}
                 </select>
             </label>
         </>
