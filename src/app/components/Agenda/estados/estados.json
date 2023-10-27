@@ -3,27 +3,32 @@
         "nome": "Peso",
         "icone": "weight-scale",
         "prefix": "Kg",
-        "resultados": "--"
+        "resultados": "--",
+        "tipo": "number"
     },
     {
         "nome": "Sono",
         "icone": "bed",
         "prefix": "Hrs",
-        "resultados": "--"
+        "resultados": "--",
+        "tipo": "number"
     },
     {
         "nome": "Humor",
         "icone": "face-meh",
-        "resultados": "--"
+        "resultados": "--",
+        "tipo": "opcao"
     },
     {
         "nome": "Social",
         "icone": "comments",
-        "resultados": "--"
+        "resultados": "--",
+        "tipo": "opcao"
     },
     {
         "nome": "Mental",
         "icone": "brain",
-        "resultados": "--"
+        "resultados": "--",
+        "tipo": "opcao"
     }
 ]

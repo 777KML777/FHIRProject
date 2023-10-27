@@ -12,7 +12,7 @@ import Tarefas from './tarefas'
 import Modal from '../Modal'
 
 function Agenda() {
-    const [ativo, setAtivo] = useState("False")
+    const [ativo, setAtivo] = useState("false")
     return (
         <>
             <div className={styles.corpo}>
@@ -29,8 +29,6 @@ function Agenda() {
                 </div>
             </div>
             <Modal classe={ativo} tela={Categorias}>
-                <Categorias /> 
-                {/* Substitua Categorias, pelo componente que será exibido no modal */}
             </Modal>
         </>
     )

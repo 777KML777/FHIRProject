@@ -35,7 +35,8 @@
 
 .resultado {
     color: var(--texto-cor-principal);
-    font-family: var(--fonte-principal);;
+    font-family: var(--fonte-principal);
+    ;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -44,9 +45,48 @@
 
 .resultado span {
     color: var(--texto-cor-principal);
-    font-family: var(--fonte-principal);;
+    font-family: var(--fonte-principal);
+    ;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.input_box {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.input_box .prefix {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #999;
+}
+
+.input_box input::-webkit-outer-spin-button,
+.input_box input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input_box input {
+    width: 3rem;
+    font-size: 1rem;
+    text-align: end;
+    font-weight: 600;
+    background: #fff;
+    border: none;
+    color: #999;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.input_box:focus-within {
+    border-color: #777;
 }
