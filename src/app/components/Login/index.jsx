@@ -1,3 +1,4 @@
+import Link from "next/link"
 import "./login.css"
 export default function Login (){
     return (
@@ -25,7 +26,7 @@ export default function Login (){
             <div className="cadastro">
                 <p>CADASTRE-SE</p>
                 <h4>Faça o seu cadastro agora mesmo, de forma rápida e fácil.</h4>
-                <button className="cadastrar_button">CONTINUAR</button>
+                <Link href={"./cadastro"} className="cadastrar_button">CONTINUAR</Link>
             </div>
         </div>
     </div>

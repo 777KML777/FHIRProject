@@ -31,7 +31,7 @@
     letter-spacing: -0.047;
 }
 
-.hero_sectio button {
+.botao  {
     display: flex;
     padding: 0rem 1.25rem;
     flex-direction: column;

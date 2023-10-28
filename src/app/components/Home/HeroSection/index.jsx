@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./heroSection.module.css";
 
 export default function HeroSection() {
@@ -8,7 +9,7 @@ export default function HeroSection() {
           <span>Grupo MindCare:</span> Terapia online com os melhores
           profissionais
         </p>
-        <button>Consulte agora!</button>
+        <Link href={"./login"} className={styles.botao}>Consulte agora!</Link>
       </section>
     </>
   );
