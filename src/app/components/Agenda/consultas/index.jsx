@@ -16,7 +16,7 @@ function Consultas() {
                                 </div>
                                 <div className={styles.informacoes}>
                                     <p className={styles.nome}>{item.nome}</p>
-                                    <p className={styles.horarios}>{item.horarios}</p>
+                                    <p className={styles.horario}>{item.horarios}</p>
                                 </div>
                             </div>
                         )

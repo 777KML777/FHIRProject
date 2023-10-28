@@ -29,6 +29,7 @@
 }
 
 .programas_auto_cuidado button {
+    color: var(--texto-cor-secundaria);
     width: fit-content;
     padding: 0.625rem;
     border: none;

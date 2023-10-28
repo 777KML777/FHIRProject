@@ -26,12 +26,13 @@
 }
 
 .footer .nav_footer {
- display: flex;
- flex-direction: column;
- gap: 10px;
+    color: var(--texto-cor-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.footer .nav_footer + .nav_footer {
+.footer .nav_footer+.nav_footer {
     margin-left: 20px;
 }
 
@@ -49,6 +50,7 @@
 }
 
 .footer .nav_footer:last-child button:first-child {
+    color: var(--texto-cor-secundaria);
     background: #18a0fb;
 }
 

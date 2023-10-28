@@ -53,7 +53,7 @@
     border-radius: 0.625rem;
     border: 2px solid var(--cor-principal);
     background: var(--cor-principal);
-    color: var(--fonte-cor-secundaria);
+    color: var(--texto-cor-secundaria);
     font-family: var(--fonte-principal);
     font-size: 1.125rem;
     font-style: normal;

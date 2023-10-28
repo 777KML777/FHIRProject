@@ -39,6 +39,7 @@
 }
 
 .alt_dados_cad {
+    color: var(--texto-cor-secundaria);
     display: flex;
     width: fit-content;
     justify-content: center;
@@ -52,6 +53,7 @@
 }
 
 .del_cadastro {
+    color: var(--texto-cor-secundaria);
     display: flex;
     padding: 0.625rem 3.125rem;
     justify-content: center;
