@@ -13,7 +13,7 @@
 
 .login {
     display: flex;
-    width: 353px;
+    width: 25rem;
     height: 562px;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +51,8 @@
     border-radius: 0.63rem;
     border: none;
     text-align: center;
+    padding-top: 15px;
+    color: var(--texto-cor-secundaria);
     font-family: Poppins;
     font-size: 1rem;
     font-weight: 500;    
@@ -58,7 +60,7 @@
 }
 
 .cadastro {
-    width: 607px;
+    width: 50rem;
     height: 562px;
     display: flex;
     padding: 0rem 3.125rem;

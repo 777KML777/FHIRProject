@@ -1,3 +1,4 @@
+import Link from "next/link"
 import "./cadastro.css"
 export default function Cadastro (){
     return (
@@ -6,7 +7,7 @@ export default function Cadastro (){
                 <div className="login">
                     <p>FAÇA O SEU LOGIN</p>
                     <h4>Faça o seu login agora mesmo, de forma rápida e fácil.</h4>
-                    <button className="login_button">CONECTAR</button>
+                    <Link href={"./login"} className="login_button">CONECTAR</Link>
                 </div>
                 <div className="cadastro">
                     <div className="form">
